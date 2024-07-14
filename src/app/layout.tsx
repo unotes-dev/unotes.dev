@@ -1,18 +1,18 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { GitHubLogoIcon, RocketIcon } from "@radix-ui/react-icons";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import { GitHubLogoIcon, RocketIcon } from '@radix-ui/react-icons';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Unotes | Secure and Self-Hosted Note-Taking Application",
+  title: 'Unotes | Secure and Self-Hosted Note-Taking Application',
   description:
-    "unotes is an open-source, self-hosted web application for secure note-taking. Focus on data safety and privacy with easy installation and management. Ideal for personal and organizational use.",
+    'unotes is an open-source, self-hosted web application for secure note-taking. Focus on data safety and privacy with easy installation and management. Ideal for personal and organizational use.'
 };
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
@@ -57,7 +57,7 @@ export default function RootLayout({
           <a className="flex items-center justify-center" href="/">
             <div className="flex gap-4 items-center">
               <img src="/logo.svg" alt="Unotes" width={32} height={32} />
-              <span className="font-bold font-mono">
+              <span className="font-bold font-mono hidden md:flex">
                 Safe Notes for Better Sleep
               </span>
             </div>
